@@ -1,12 +1,12 @@
 # Objective-C Style Guide
 
-This style guide outlines the coding conventions of the iOS teams. The reason we made this style guide was so that we could keep our code nice and consistent - even though we have many different developers working on the projects. I welcome your feedback in [issues](https://github.com/bernikowich-cedoni/objetive-c-style-guide/issues) and [pull requests](https://github.com/bernikowich-cedoni/objetive-c-style-guide/pulls).
+This style guide outlines the coding conventions of the iOS team. The reason we made this style guide was so that we could keep our code nice and consistent - even though we have many different developers working on the projects. I welcome your feedback in [issues](https://github.com/bernikowich-cedoni/objetive-c-style-guide/issues) and [pull requests](https://github.com/bernikowich-cedoni/objetive-c-style-guide/pulls).
 
 This style guide is based on [Coding Guidelines for Cocoa](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html).
 
 ## Credits
 
-I would like to thank the creators of the [Ray Wenderlich](https://github.com/raywenderlich/objective-c-style-guide) Objective-C Style Guides. This style guide provided a solid starting point for this guide to be created and based upon.
+I would like to thank the creators of the [Ray Wenderlich](https://github.com/raywenderlich/objective-c-style-guide) and [New York Times](https://github.com/NYTimes/objective-c-style-guide) Objective-C Style Guides. This style guide provided a solid starting point for this guide to be created and based upon.
 
 ## Introduction
 
