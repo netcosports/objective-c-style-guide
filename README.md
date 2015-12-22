@@ -440,12 +440,12 @@ Private properties should be declared in class extensions (anonymous categories)
 
 ## Image Naming
 
-Image names should be named consistently to preserve organization and developer sanity. They should be named as one camel case string with a description of their purpose, followed by the un-prefixed name of the class or property they are customizing (if there is one), followed by a further description of color and/or placement, and finally their state.
+Image names should be named consistently to preserve organization and developer sanity. They should be named as one lower case string with separated by underscore: a description of their purpose, followed by the un-prefixed name of the class or property they are customizing (if there is one), followed by a further description of color and/or placement, and finally their state.
 
 **Preferred:**
 
-* `RefreshBarButtonItem` / `RefreshBarButtonItem@2x` and `RefreshBarButtonItemSelected` / `RefreshBarButtonItemSelected@2x`
-* `ArticleNavigationBarWhite` / `ArticleNavigationBarWhite@2x` and `ArticleNavigationBarBlackSelected` / `ArticleNavigationBarBlackSelected@2x`.
+* `refresh_bar_button_item` / `refresh_bar_button_item@2x` and `refresh_bar_button_item_selected` / `refresh_bar_button_item_selected@2x`
+* `article_navigation_bar_white` / `article_navigation_bar_white@2x` and `article_navigation_bar_black_selected` / `article_navigation_bar_black_selected@2x`.
 
 Images that are used for a similar purpose should be grouped in respective groups in an Images folder or Asset Catalog.
 
