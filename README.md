@@ -24,6 +24,7 @@ Here are some of the documents from Apple that informed the style guide. If some
 * [Conditionals](#conditionals)
   * [Ternary Operator](#ternary-operator)
 * [Error handling](#error-handling)
+* [Abbreviations and Acronyms](#abbreviations-and-acronyms)
 * [Methods](#methods)
 * [Variables](#variables)
 * [Naming](#naming)
@@ -154,6 +155,23 @@ if (error) {
 ```
 
 Some of Apple’s APIs write garbage values to the error parameter (if non-NULL) in successful cases, so switching on the error can cause false negatives (and subsequently crash).
+
+## Abbreviations and Acronyms
+
+In general, you shouldn’t abbreviate names when you design your programmatic interface. However, there are abbreviations in [Apple docs](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CodingGuidelines/Articles/APIAbbreviations.html) which are either well established or have been used in the past (URL, HTTP and etc).
+
+**Preferred:**
+```objc
+@property (nullable, readonly, copy) NSString *URLString;
++ (NSURL *)URLWithDataRepresentation:(NSData *)data;
+```
+
+**Not Preferred:**
+
+```objc
+@property (nullable, readonly, copy) NSString *urlString;
++ (NSURL *)urlWithDataRepresentation:(NSData *)data;
+```
 
 ## Methods
 
