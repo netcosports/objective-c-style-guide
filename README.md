@@ -376,9 +376,17 @@ CGFloat height = frame.size.height;
 
 ## Constants
 
-Constants are preferred over in-line string literals or numbers, as they allow for easy reproduction of commonly used variables and can be quickly changed without the need for find and replace. Constants should be declared as `static` constants and not `#define`s unless explicitly being used as a macro.
+Constants are preferred over in-line string literals or numbers, as they allow for easy reproduction of commonly used variables and can be quickly changed without the need for find and replace. Constants should be declared as `#define`s and not `static` constants.
 
 **Preferred:**
+
+```objc
+#define NYTAboutViewControllerCompanyName @"The New York Times Company"
+
+#define NYTImageThumbnailHeight 2
+```
+
+**Not Preferred:**
 
 ```objc
 static NSString * const NYTAboutViewControllerCompanyName = @"The New York Times Company";
@@ -386,12 +394,15 @@ static NSString * const NYTAboutViewControllerCompanyName = @"The New York Times
 static const CGFloat NYTImageThumbnailHeight = 50.0;
 ```
 
-**Not Preferred:**
+If you writing a framework, then constants provided for external use, should be defined with `external` form, for internal use use `define`s.
+
 
 ```objc
-#define CompanyName @"The New York Times Company"
+//.h file
+extern NSString * const NYTSomeFrameworkParameter;
 
-#define thumbnailHeight 2
+//.m file
+NSString * const NYTSomeFrameworkParameter = @"NYTSomeFrameworkParameter";
 ```
 
 ## Enumerated Types
