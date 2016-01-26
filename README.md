@@ -549,6 +549,9 @@ If ours doesn’t fit your tastes, have a look at some other style guides:
 Or
 https://github.com/bengardner/uncrustify
 
+
+For edit config file you may use https://github.com/ryanmaxwell/UncrustifyX.
+
 ##XCode
 
 
