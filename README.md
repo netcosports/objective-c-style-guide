@@ -555,7 +555,9 @@ https://github.com/bengardner/uncrustify
 ### Script
 
 Add new Run Script and paste:
+
 ///////
+
 UNCRUSTIFY="uncrustify"
 CONFIG=$HOME"/.uncrustify/uncrustify.cfg"
 SOURCE_LANGUAGE="AUTO"
@@ -564,7 +566,9 @@ for file in $(find . -name '*.m' -o -name '*.mm' -o -name '*.h')
 do
 "$UNCRUSTIFY" -c "$CONFIG" --no-backup $file $language_option
 done
+
 ///////
+
 UNCRUSTIFY - uncrustify location
 CONFIG - config file location
 
