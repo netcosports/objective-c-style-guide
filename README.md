@@ -539,3 +539,38 @@ If ours doesn’t fit your tastes, have a look at some other style guides:
 * [Luke Redpath](http://lukeredpath.co.uk/blog/2011/06/28/my-objective-c-style-guide/)
 * [Marcus Zarra](http://www.cimgf.com/zds-code-style-guide/)
 * [Wikimedia](https://www.mediawiki.org/wiki/Wikimedia_Apps/Team/iOS/ObjectiveCStyleGuide)
+
+# Uncrustify
+
+##How to install
+
+1. Install packet manager: Homebrew (http://brew.sh/) or MacPorts (https://www.macports.org/).
+2. Install uncrustify: brew install uncrustify or port install uncrustify.
+Or
+https://github.com/bengardner/uncrustify
+
+##XCode
+
+
+### Script
+
+Add new Run Script and paste:
+///////
+UNCRUSTIFY="uncrustify"
+CONFIG=$HOME"/.uncrustify/uncrustify.cfg"
+SOURCE_LANGUAGE="AUTO"
+
+for file in $(find . -name '*.m' -o -name '*.mm' -o -name '*.h')
+do
+"$UNCRUSTIFY" -c "$CONFIG" --no-backup $file $language_option
+done
+///////
+UNCRUSTIFY - uncrustify location
+CONFIG - config file location
+
+### Install XCode Uncrustify Plugin
+
+https://github.com/benoitsan/BBUncrustifyPlugin-Xcode
+
+For use custom config file - create ".uncrustify" directory in you user directory and paste custom config file "uncrustify.cfg".
+Open Edit - Format Code - BBUncrustifyPlugin Preferences and change Clang Style to Custom Style(File).
