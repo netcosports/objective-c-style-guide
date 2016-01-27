@@ -546,8 +546,13 @@ If ours doesn’t fit your tastes, have a look at some other style guides:
 
 1. Install packet manager: Homebrew (http://brew.sh/) or MacPorts (https://www.macports.org/).
 2. Install uncrustify: brew install uncrustify or port install uncrustify.
+
 Or
+
 https://github.com/bengardner/uncrustify
+
+
+For edit config file you may use https://github.com/ryanmaxwell/UncrustifyX.
 
 ##XCode
 
